@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@biconomy/mexa": "^2.0.1",
-    "@nuxtjs/axios": "^5.12.5",
+    "@nuxtjs/axios": "^5.13.1",
     "@nuxtjs/pwa": "^3.3.5",
     "@toruslabs/torus-direct-web-sdk": "^4.1.0",
     "core-js": "^3.8.3",
