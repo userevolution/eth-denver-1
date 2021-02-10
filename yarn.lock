@@ -1703,10 +1703,10 @@
   dependencies:
     deepmerge "^4.2.2"
 
-"@toruslabs/torus-direct-web-sdk@^4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@toruslabs/torus-direct-web-sdk/-/torus-direct-web-sdk-4.1.0.tgz#fb37033e37318045c0374525349baf5b87ba9cf3"
-  integrity sha512-Imh64Qd+ojeToYknQMJjeX4RWXDW/3dsWuoANJDrDfnVDf2QJpe7ypZKfGc2MTgKwd6oBVgEoWd8Y9VX94mptA==
+"@toruslabs/torus-direct-web-sdk@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@toruslabs/torus-direct-web-sdk/-/torus-direct-web-sdk-4.2.0.tgz#39e7dcc8ade78ef86cfc46f787793df9800aa764"
+  integrity sha512-VuqLWDPQW1KKxuAnozwrKM9PHkJ94FTAul0Av9Ou0ClcmG9KkocnC8mKqILaZzweNwAXBDIgiKXV7Qso/vw+yA==
   dependencies:
     "@chaitanyapotti/random-id" "^1.0.3"
     "@chaitanyapotti/register-service-worker" "^1.7.3"
