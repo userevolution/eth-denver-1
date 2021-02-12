@@ -62,7 +62,7 @@ export default {
     return {
       unicornList: [
         {
-          name: 'Rainbow',
+          name: 'Maticorn',
           image: 'img/unicorns/rainbow.png',
           logo: 'img/matic-logo.png',
           id: '1',
@@ -78,9 +78,9 @@ export default {
           },
         },
         {
-          name: 'Eclipse',
+          name: 'Nearcorn',
           image: 'img/unicorns/eclipse.png',
-          logo: 'img/matic-logo.png',
+          logo: 'img/near-logo.png',
           id: '2',
           maticId: '1',
           stats: {
@@ -94,9 +94,9 @@ export default {
           },
         },
         {
-          name: 'Sparkles',
+          name: 'Polkacorn',
           image: 'img/unicorns/sparkles.png',
-          logo: 'img/matic-logo.png',
+          logo: 'img/polka-logo.png',
           id: '3',
           maticId: '1',
           stats: {
@@ -110,9 +110,9 @@ export default {
           },
         },
         {
-          name: 'Bubbles',
+          name: 'Celocorn',
           image: 'img/unicorns/bubbles.png',
-          logo: 'img/matic-logo.png',
+          logo: 'img/celo-logo.png',
           id: '4',
           maticId: '1',
           stats: {
@@ -126,9 +126,9 @@ export default {
           },
         },
         {
-          name: 'Daydream',
+          name: 'Gitcorn',
           image: 'img/unicorns/daydream.png',
-          logo: 'img/matic-logo.png',
+          logo: 'img/git-logo.png',
           id: '5',
           maticId: '1',
           stats: {

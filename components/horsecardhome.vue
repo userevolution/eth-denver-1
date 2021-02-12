@@ -3,17 +3,20 @@
     <div class="clash-card barbarian">
       <div class="clash-card__image clash-card__image--barbarian">
         <img
-          src="img/unicorns/eclipse.png"
+          :src="unicornData.image"
           alt="barbarian"
           style="max-width: 400px !important"
         />
       </div>
-      <div class="clash-card__level clash-card__level--barbarian">Level 4</div>
-      <div class="clash-card__unit-name">The Barbarian</div>
-      <div class="clash-card__unit-description">
-        The Barbarian is a kilt-clad Scottish warrior with an angry,
-        battle-ready expression, hungry for destruction. He has Killer yellow
-        horseshoe mustache.
+      <div class="clash-card__level clash-card__level--barbarian">
+        Level {{ unicornData.stats.exp }}
+      </div>
+      <div class="clash-card__unit-name">{{ unicornData.name }}</div>
+      <div class="clash-card__unit-description" style="text-align: center">
+        <img
+          :src="unicornData.logo"
+          style="height: 4rem; width: auto; padding-left: 30px"
+        />
       </div>
     </div>
   </div>
@@ -22,6 +25,7 @@
 <script>
 export default {
   name: 'HorseCard',
+  props: ['unicornData'],
 }
 </script>
 

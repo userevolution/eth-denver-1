@@ -15,7 +15,7 @@
           <span class="navbar-toggler-bar bar2"></span>
           <span class="navbar-toggler-bar bar3"></span>
         </button>
-        <a class="navbar-brand" href="javascript:;">Creative Tim</a>
+        <a class="navbar-brand" href="javascript:;">Unirace</a>
       </div>
       <div id="example-header-3" class="collapse navbar-collapse">
         <div class="navbar-collapse-header">
@@ -43,13 +43,28 @@
         </div>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="javascript:;"> Home </a>
+            <a class="nav-link" href="javascript:;" @click="gotoPage('/')">
+              Home
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="javascript:;"> About Us </a>
+            <a class="nav-link" href="javascript:;" @click="gotoPage('/play')">
+              Play
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="javascript:;"> Contact Us </a>
+            <a class="nav-link" href="javascript:;" @click="gotoPage('/race')">
+              Race
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="javascript:;"
+              @click="gotoPage('/my-tickets')"
+            >
+              My Tickets
+            </a>
           </li>
         </ul>
       </div>
@@ -60,6 +75,13 @@
 <script>
 export default {
   name: 'Header',
+  methods: {
+    gotoPage(page) {
+      this.$router.push({
+        path: page,
+      })
+    },
+  },
 }
 </script>
 

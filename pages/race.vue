@@ -164,7 +164,7 @@ export default {
     const sketchInstance = new p5(script)
     setTimeout(() => {
       vm.animate = false
-    }, 3500)
+    }, 6500)
     setInterval(() => {
       let data = vm.leaderboard
       vm.leaderboard = null

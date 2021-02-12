@@ -12,14 +12,14 @@
             "
           >
             <h1 class="title">
-              Integrated <br /><strong class="text-info"
-                >Front marketing</strong
+              Bet On Your <br /><strong class="text-info"
+                >Favourite Unicorn</strong
               >
             </h1>
             <p class="description">
-              We aim high at being focused on building relationships with our
-              clients and community. Using our creative gifts drives this
-              foundation.
+              <!--              We aim high at being focused on building relationships with our-->
+              <!--              clients and community. Using our creative gifts drives this-->
+              <!--              foundation.-->
             </p>
             <div class="row row-input">
               <div class="col-sm-4 col-12">
@@ -28,7 +28,7 @@
                   class="btn btn-info btn-block"
                   @click="login"
                 >
-                  Get Started
+                  Login
                 </button>
               </div>
             </div>
@@ -39,24 +39,9 @@
               v-bind="settings"
               style="top: 12rem !important"
             >
-              <div>
-                <horsecardhome />
+              <div v-for="x in unicornList" :key="x.id">
+                <horsecardhome :unicorn-data="x" />
               </div>
-              <div>
-                <horsecardhome />
-              </div>
-              <div>
-                <horsecardhome />
-              </div>
-              <div>
-                <horsecardhome />
-              </div>
-              <div>
-                <horsecardhome />
-              </div>
-              <!--              <div>-->
-              <!--                <homecard />-->
-              <!--              </div>-->
             </VueSlickCarousel>
           </div>
         </div>
@@ -95,6 +80,88 @@ export default {
   components: { VueSlickCarousel, homecard, horsecardhome },
   data() {
     return {
+      unicornList: [
+        {
+          name: 'Maticorn',
+          image: 'img/unicorns/rainbow.png',
+          logo: 'img/matic-logo.png',
+          id: '1',
+          maticId: '1',
+          stats: {
+            exp: '20',
+            speed: '28',
+            stamina: '140',
+          },
+          slots: {
+            booked: 4,
+            total: 10,
+          },
+        },
+        {
+          name: 'Nearcorn',
+          image: 'img/unicorns/eclipse.png',
+          logo: 'img/near-logo.png',
+          id: '2',
+          maticId: '1',
+          stats: {
+            exp: '15',
+            speed: '25',
+            stamina: '160',
+          },
+          slots: {
+            booked: 2,
+            total: 10,
+          },
+        },
+        {
+          name: 'Polkacorn',
+          image: 'img/unicorns/sparkles.png',
+          logo: 'img/polka-logo.png',
+          id: '3',
+          maticId: '1',
+          stats: {
+            exp: '30',
+            speed: '24',
+            stamina: '190',
+          },
+          slots: {
+            booked: 7,
+            total: 10,
+          },
+        },
+        {
+          name: 'Celocorn',
+          image: 'img/unicorns/bubbles.png',
+          logo: 'img/celo-logo.png',
+          id: '4',
+          maticId: '1',
+          stats: {
+            exp: '12',
+            speed: '23',
+            stamina: '150',
+          },
+          slots: {
+            booked: 3,
+            total: 10,
+          },
+        },
+        {
+          name: 'Gitcorn',
+          image: 'img/unicorns/daydream.png',
+          logo: 'img/git-logo.png',
+          id: '5',
+          maticId: '1',
+          stats: {
+            exp: '10',
+            speed: '27',
+            stamina: '180',
+          },
+          slots: {
+            booked: 8,
+            total: 10,
+          },
+        },
+      ],
       settings: {
         pauseOnFocus: false,
         pauseOnHover: false,
@@ -312,7 +379,7 @@ export default {
           this.$router.push({
             path: '/play',
           })
-        }, 3500)
+        }, 200)
         this.console(loginDetails)
       } catch (error) {
         // eslint-disable-next-line no-console
